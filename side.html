@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather.com</title>
+	<link rel="stylesheet" type="text/css" href="side.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 
+</head>
+<body onkeyup="enter(event)">
+<div id="all">
+<div id="loading">
+    <div class="load" id="loader"><div></div><div></div><div></div></div>
+</div>
+    <header>
+        <input type="text" placeholder="Enter the city name" id="input" >          
+        <button><i class="fa fa-search" onclick="getResultFoo()" id="button"></i></button>
+    </header>
+    <p id="statement"></p>
+    <div id="ul"></div>
+    <div id="div">
+        <div id="allNavs"></div>
+    </div>
+<script type="text/javascript" src="side.js"></script>
+<div id="links"></div>
+<footer id="footer"></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,414 @@
+body{
+    height: auto;
+    margin: 0;
+}
+header {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+::placeholder:hover{
+    color: #EE8657;
+}
+button {
+    height: 35px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 18px;
+}
+button:hover{
+    box-shadow: 0 0 10px 10px #A5C6FF;
+    transform: scale(0.95,0.95);
+    background-color: #A5C6FF;
+    color: black;
+    transition-duration: 0.5s;
+}
+#all{
+    background-image: url(4.jpg);
+    background-size: cover;
+}
+#statement{
+    color: red;
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+}
+#input {
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+#input:hover {
+    box-shadow: 0 0 10px 10px #A5C6FF;
+    transform: scale(0.95,0.95); 
+    background-color: #A5C6FF;
+    color: black;
+    transition-duration: 0.5s;
+}
+#ul {
+    display: grid;
+    height: 250px;
+    grid-template-columns:
+    repeat(7, 1fr);
+    grid-gap: 25px 5px;
+}
+#ul div:nth-child(6) {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    height: 220px;
+    background-color: #EE8657;
+    border-radius: 30px;
+}
+#ul div:nth-child(6):hover{
+    background-color: #A5C6FF;
+    opacity: 0.8;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 15px 25px #A5C6FF;
+    transform: scale(0.9,0.9);
+    transition-duration: 0.5s;
+}
+#allNavs {
+    display: flex;
+    height: 250px;
+    margin-top: 25px;
+}
+#allNavs div {
+    margin: 5px;
+    width: 160px;
+    height: 200px;
+    color: white;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+#allNavs div:hover {
+    box-shadow: 0 0 15px 25px #A5C6FF;
+    transform: scale(0.9,0.9);
+    transition-duration: 0.5s;
+    opacity: 0.8;
+    color: black;
+    font-weight: bold;
+}
+#allNavs div:nth-child(even) {
+    background-color: #EE8657;
+}#allNavs div:nth-child(even):hover {
+    background-color: #A5C6FF;
+}
+#allNavs div:nth-child(odd) {
+    background-color: #FF9768;
+}
+#allNavs div:nth-child(odd):hover {
+    background-color: #A5C6FF;
+}
+.element {
+    height: 220px;
+    color: white;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+.element:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 15px 25px #A5C6FF;
+    transform: scale(0.9,0.9);
+    transition-duration: 0.5s;
+}
+.element2 {
+    height: 30px;
+    text-align: center;
+}
+.element:nth-child(even){
+    background-color: #EE8657;
+}
+.element:nth-child(even):hover{
+    background-color: #A5C6FF;
+}
+.element:nth-child(odd){
+    background-color: #FF9768;
+}
+.element:nth-child(odd):hover{
+    background-color: #A5C6FF;
+}
+.hourDate {
+    height: 25px;
+    margin: 7px 7px 0 7px;
+    text-align: center;
+    font-size:20px; 
+}
+.img {
+    width: 60px;
+    text-align: center;
+    height: 45px;
+    margin: auto;
+}
+.temperatura {
+    width: 65px;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 20px;
+}
+.humidity {
+    width: 60px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.description {
+    margin: 7px 7px 0 7px;
+    height: auto;
+    text-align: center;
+    font-size:20px;
+}
+.element {
+    height: 220px;
+}
+.element2 {
+    height: auto;
+    margin: 7px 7px 0 7px;
+    text-align: center;
+    font-size:20px; 
+}
+.img2 {
+    width: 60px;
+    text-align: center;
+    height: 45px;
+    margin: 10px auto;
+}
+.temperatura2 {
+    width: 65px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+}
+.humidity2 {
+    width: 60px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.description2 {
+    margin: 10px 8px;
+    height: auto;
+    text-align: center;
+    font-size:20px;
+}
+#weather {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    color: white;
+    border: 3px solid black;
+}
+#humidity {
+    grid-area:8/6/9/9 ;
+    text-align: left;
+    font-size: 25px;
+}
+#humidityIcon {
+    grid-area:8/5/9/6 ;
+    text-align: right;
+    margin: 2px 5px 0 0;
+    font-size: 25px;
+}
+#city {
+    grid-area:2/2/4/5 ;
+    text-align: center;
+    font-size: 27px;
+}
+#cityIcon {
+    grid-area:2/1/4/2 ;
+    text-align: right;
+    font-size: 30px;
+}
+#countryName {
+    grid-area:4/5/7/8 ;
+    text-align: center;
+    font-size: 55px
+}      
+#countryFlag {
+    grid-area:2/8/4/10;
+}          
+#weatherIcon {
+    grid-area:5/3/7/5;
+}            
+#temp {
+    grid-area: 5/1/7/3;
+    text-align: center;
+    margin-top: 9px;
+    font-size: 25px;
+}  
+#windSpeed{
+    grid-area:9/1/10/11 ;
+    text-align: center;
+    font-size: 20px;
+}
+#links{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #EE8657;
+}
+#links i {
+    color: #EE8657;
+    margin: 15px 15px 0 15px;
+}
+#links i:hover {
+    transform: scale(0.85,0.85);
+    transition-duration: 1s;
+    box-shadow: 0 0 25px 8px;
+    cursor: pointer;
+    color: #A5C6FF;
+}
+#footer{
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+#footer p{
+    margin: 0.5px;
+    padding-top: 10px;
+}
+#loading{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: gray;
+    color: white;
+    opacity: 1;
+    transition: 0.5s;
+    visibility: visible;
+    }
+    #loading.hidden{
+    opacity:0;
+    visibility: hidden;
+    }
+.load {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+.load div {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    width: 10px;
+    background: coral;
+    animation: lds-facebook 1.2s cubic-bezier(0,   0.5, 0.5, 1) infinite;
+}
+.load div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+}
+.load div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+}
+.load div:nth-child(3) {
+    left: 45px;
+    animation-delay: 0;
+}
+@keyframes lds-facebook {
+    0% {
+        top: 6px;
+        height: 51px;
+    }
+50%, 100% {
+    top: 19px;
+    height: 26px;
+    }
+}
+#loading{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(3.png);
+    background-size: cover;
+}
+@media only screen and (max-width: 950px) {
+    #ul {
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows:repeat(2,1fr);
+    height: auto;
+}
+    .element:nth-child(1) {
+        grid-area: 2/1/3/2
+    }
+    .element:nth-child(2) {
+        grid-area: 2/2/3/3
+    }
+    .element:nth-child(3) {
+        grid-area: 2/3/3/4
+    }
+    .element:nth-child(4) {
+        grid-area: 2/4/3/5
+    }
+    .element:nth-child(5) {
+        grid-area: 2/5/3/6
+    }
+    #allNavs{
+        display: grid;
+        grid-template-columns: repeat(4,1fr)
+    }
+    #countryName{
+        font-size: 50px;
+    }
+    #allNavs {
+    height: 450px;
+}
+}
+@media only screen and (max-width: 700px) {
+    #ul {
+    grid-template-columns:repeat(6, 250px);
+    grid-template-rows:repeat(1,auto);
+}
+    .element:nth-child(1) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .element:nth-child(2) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .element:nth-child(3) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .element:nth-child(4) {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .element:nth-child(5) {
+        grid-column: 1;
+        grid-row: 6
+    }    
+    #ul div:nth-child(6) {
+        width: 350px;
+        grid-row: 1;
+    } 
+    #countryName{
+        font-size: 55px;
+    }
+     #allNavs{
+        grid-template-columns: repeat(2,1fr);
+         height: 1000px;
+    }
+}
